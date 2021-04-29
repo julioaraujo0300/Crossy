@@ -1,12 +1,12 @@
 export default class Car extends Phaser.GameObjects.Sprite {
-    constructor(scene, x, y, texture, flipped){
-        super(scene, x, y, texture)
+    constructor(scene, x, y, texture, carSpeed, flipped){
+        super(scene, x, y, texture, carSpeed)
 
         this.setPosition(x, y);
         this.setFlip(flipped, false);
 
-        let minSpeed = 3;
-        let maxSpeed = 6;
+        let maxSpeed = carSpeed;
+        let minSpeed = carSpeed - carSpeed / 2;
         
         this.speed = minSpeed + Math.random() * (maxSpeed - minSpeed);
     }

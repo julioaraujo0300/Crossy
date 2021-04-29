@@ -39,6 +39,9 @@ export default class MainScene extends Phaser.Scene {
         this.player = this.add.sprite(640, 1200, 'player');
         this.cars = [];
         this.cars.push(this.add.existing( new Car(this, 10 * 128 - 64, 2 * 128 + 64, 'yellow.car')));
+        this.cars.push(this.add.existing( new Car(this, 10 * 128 - 64, 2 * 128 + 64, 'yellow.car')));
+        this.cars.push(this.add.existing( new Car(this, 10 * 128 - 64, 2 * 128 + 64, 'yellow.car')));
+        this.cars.push(this.add.existing( new Car(this, 10 * 128 - 64, 2 * 128 + 64, 'yellow.car')));
         // this.cars.push(this.add.existing( new Car(this, 10 * 128 - 64, 2 * 128 + 64, 'yellow.car')))
         
 
